@@ -1,0 +1,26 @@
+doctype html
+head(lang = "en")
+	block title
+	
+	link(rel = "shortcut icon" href = "img/logo.png" type = "image/png")
+	
+	link(rel = "stylesheet" href = "library/jQuery/QUnit/qunit-1.19.0.css")
+	link(rel = "stylesheet" href = "style/layout.css")
+		
+	block styles
+
+	block head_scripts
+	script(src = "library/jQuery/jquery-1.11.3.min.js")
+	script(src = "library/jQuery/QUnit/qunit-1.19.0.js")
+body
+	div(id = "qunit")
+	div(id = "qunit-fixture")
+	ul(class = "menu")
+			li(class = "menu") 
+				a(href = "./") index
+			li(class= "menu")
+				a(href = "./styleGuide") styleGuide
+
+	block contents
+		
+	block body_scripts
